@@ -2,7 +2,7 @@ from langchain import OpenAI, ConversationChain
 from langchain.memory import ConversationBufferMemory
 from langchain.llms import OpenAI
 import os
-os.environ["OPENAI_API_KEY"] = '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'
+os.environ["OPENAI_API_KEY"] = 'your_openAI_API'
 chat = OpenAI(temperature=0)
 #
 conversation = ConversationChain(

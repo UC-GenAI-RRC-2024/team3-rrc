@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Project 3 of P&G-UC Hackathon about prediction of eczema in 2050
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 
 
 
@@ -12,7 +12,7 @@ Atopic dermatitis is a common chronic skin disease characterized by dry skin, lo
 ### Built With
 
 
-* [![Next][Python Dash]][https://dash.plotly.com/]
+* https://dash.plotly.com/
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -41,7 +41,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 3. go to the folder
    ```sh
-   cd team3-rrc2024.git
+   cd team3-rrc2024
    ```
 4. make a virtual environment for installing the required libraries with specific versions
    ```sh
@@ -52,17 +52,20 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    pip3 install -r requirements.txt
    ```
-6. Enter your OpenAI API in `app.py`
+6. Enter your OpenAI API in `pages/chatbot/chatbot_model.py`
    ```js
-   openai.api_key = 'enter_your_openAI_api'
+   os.environ["OPENAI_API_KEY"] = 'your_openAI_API'
    ```
-7. If you are re-indexing the pdf files, please commnet out the init_index("OneDrive_1_1-27-2024") in the index.py file, this function assumes that all of the training pdf files are in the "OneDrive_1_1-27-2024". This runs the indexing. You should put the new indexed folder in the  pages/chatbot folder. For your convenience, already indexed file is placed in "OneDrive_1_1-27-2024" folder @ https://mailuc-my.sharepoint.com/:f:/g/personal/shamsabz_ucmail_uc_edu/EvL9x1G1isBLjbQF-C4rta0BXvsj0amgxaCZ1CuHQrpeMw?e=AA9A8o
+7. If you are re-indexing the pdf files, 
+please comment out the init_index("OneDrive_1_1-27-2024") in the index.py file, this function assumes that all of the training pdf files are in the "OneDrive_1_1-27-2024". This runs the indexing. You should put the new indexed folder in the project folder. For your convenience, already indexed file is placed in "OneDrive_1_1-27-2024" folder @ https://mailuc-my.sharepoint.com/:f:/g/personal/shamsabz_ucmail_uc_edu/EvL9x1G1isBLjbQF-C4rta0BXvsj0amgxaCZ1CuHQrpeMw?e=AA9A8o
 
 8. Run the server 
    ```py
-   python3 chatbot/index.py
+   python3 index.py
    ```
+9. The project will be running on your localhost @ http://127.0.0.1:8050/
    
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,11 +104,11 @@ Project Link: [https://github.com/UC-GenAI-RRC-2024/team3-rrc2024.git](https://g
 
 I would like to give credit to our pariticipating team:
 
-Aniket Bhanderi, CEAS, 
-Navya Ghanta, Business, 
-Xin Tang, Business, 
-Ryan Therkelsen, A&S Mathematical Sci., 
-Domagoj Bui, DAAP MDes
+Aniket Bhanderi, (CEAS), 
+Navya Ghanta, (Business), 
+Xin Tang, (Business), 
+Ryan Therkelsen, (A&S Mathematical Sci.), 
+Domagoj Bui, (DAAP MDes)
 
 
 
